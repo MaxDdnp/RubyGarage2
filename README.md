@@ -1,0 +1,1 @@
+# RubyGarage task 2 
