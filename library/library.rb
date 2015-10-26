@@ -16,4 +16,9 @@ class LibraryManager
     @orders  = orders
   end
 
+  def most_popular_book
+    @orders.group_by(&:book).values.max_by(&:size).first.book
+  end
+
+
 end
